@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HobbistApi", "HobbistApi\Ho
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{61726608-23A5-483F-8161-BD4CB84CE6E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HobbistApiTest", "HobbistApiTest\HobbistApiTest.csproj", "{EAFD7D1F-3DE6-462C-9B30-759F34761B15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,9 +19,16 @@ Global
 		{EEB636D3-91E7-4337-87B5-364FDFE79741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEB636D3-91E7-4337-87B5-364FDFE79741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEB636D3-91E7-4337-87B5-364FDFE79741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFD7D1F-3DE6-462C-9B30-759F34761B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFD7D1F-3DE6-462C-9B30-759F34761B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFD7D1F-3DE6-462C-9B30-759F34761B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFD7D1F-3DE6-462C-9B30-759F34761B15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EAFD7D1F-3DE6-462C-9B30-759F34761B15} = {61726608-23A5-483F-8161-BD4CB84CE6E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3502AAB3-7C77-4EB8-A794-3C92871ED40D}

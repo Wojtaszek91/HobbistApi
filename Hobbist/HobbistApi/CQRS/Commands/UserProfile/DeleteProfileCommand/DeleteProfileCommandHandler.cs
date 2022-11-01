@@ -12,9 +12,9 @@ namespace HobbistApi.CQRS.Commands.DeleteProfileCommand
     public class DeleteProfileCommandHandler : IRequestHandler<DeleteProfileCommandRequest, int>
     {
         private readonly IUserProfileRepository _userProfileRepository;
-        private readonly ILogger<UpsertPostCommandHandler> _logger;
+        private readonly ILogger<DeleteProfileCommandHandler> _logger;
 
-        public DeleteProfileCommandHandler(IUserProfileRepository userProfileRepository, ILogger<UpsertPostCommandHandler> logger)
+        public DeleteProfileCommandHandler(IUserProfileRepository userProfileRepository, ILogger<DeleteProfileCommandHandler> logger)
         {
             this._userProfileRepository = userProfileRepository;
             this._logger = logger;

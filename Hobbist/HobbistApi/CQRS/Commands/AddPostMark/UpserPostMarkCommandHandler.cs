@@ -31,13 +31,13 @@ namespace HobbistApi.CQRS.Commands.AddPostMark
                 var post = _postRepo.GetPostById(request.PostId);
                 var profile = _userProfileRepo.GetProfileById(request.UserProfileId);
 
-                if (post == null || profile == null) Task.FromResult(1);
+                if (post == null || profile == null) Task.FromResult(0);
 
                 return Task.FromResult(_postMarkRepo.UpsertMark(profile, post, request.Mark) ? 1 : 0);
             }
             catch (Exception e)
             {
-                _logger.LogError($"Error occured while trying to upser post mark. PostId: {request.PostId}, ProfileId: {request.UserProfileId}, Exception message: {e.Message}");
+                _logger.LogError($"Error occured while trying to upsert post mark. PostId: {request.PostId}, ProfileId: {request.UserProfileId}, Exception message: {e.Message}");
                 return Task.FromResult(2);
             }
         }

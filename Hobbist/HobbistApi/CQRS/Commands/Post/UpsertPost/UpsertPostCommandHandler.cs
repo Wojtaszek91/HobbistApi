@@ -40,16 +40,15 @@ namespace HobbistApi.CQRS.Commands.DeleteProfileCommand
                 var postToDb = PostMapper.MapPostDtoToPost(request.PostDto, userProfile, hashTag);
 
                 if (!_postRepository.DoesPostExists(postToDb.Id)) 
-                    { return Task.FromResult(_postRepository.AddPost(postToDb) == true ? 1 : 0); }
+                    return Task.FromResult(_postRepository.AddPost(postToDb) == true ? 1 : 0);
                 else
-                    { return Task.FromResult(_postRepository.EditPost(postToDb) == true ? 1 : 0); }
+                    return Task.FromResult(_postRepository.EditPost(postToDb) == true ? 1 : 0);
             }
             catch (Exception e)
             {
                 _logger.LogError($"Error occured while trying to upsert post. PostDto: {@request.PostDto}, Error message: {e.Message}");
                 return Task.FromResult(2);
             }
-
         }
     }
 }
