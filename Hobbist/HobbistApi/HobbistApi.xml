@@ -4,8 +4,5 @@
         <name>HobbistApi</name>
     </assembly>
     <members>
-        <member name="T:HobbistApi.Controllers.UserProfileController">
-            [Authorize]
-        </member>
     </members>
 </doc>

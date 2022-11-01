@@ -38,7 +38,6 @@ namespace HobbistApi.CQRS.Commands.UpdateProfileCommand.cs
                 _logger.LogError($"Error while trying to update hashtags on profileId: {request.ProfileId}. Message: {e.Message}");
                 return Task.FromResult(2);
             }
-
         }
     }
 }
