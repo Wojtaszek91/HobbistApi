@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace HobbistApiTest.HandlersTests.ProfileCommands
+namespace HobbistApiTest.HandlersTests.Profile
 {
     public class RemoveHashTagFromProfileCommandTest
     {

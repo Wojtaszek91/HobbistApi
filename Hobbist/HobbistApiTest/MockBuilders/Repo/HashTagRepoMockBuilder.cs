@@ -4,9 +4,6 @@ using Models.Models.EntityFrameworkJoinEntities.DTOs;
 using Moq;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HobbistApiTest.MockBuilders
 {
@@ -148,6 +145,26 @@ namespace HobbistApiTest.MockBuilders
             var mock = new Mock<IHashTagRepository>();
 
             mock.Setup(x => x.GetAllHashTagNamesList())
+                    .Throws(new Exception());
+
+            return mock;
+        }
+
+        public static Mock<IHashTagRepository> GetHashTagRepo_GetallHashTagDto_ReturnParam(List<HashTagDto> hashTagDtos)
+        {
+            var mock = new Mock<IHashTagRepository>();
+
+            mock.Setup(x => x.GetAllHashtagsDto())
+                    .Returns(hashTagDtos);
+
+            return mock;
+        }
+
+        public static Mock<IHashTagRepository> GetHashTagRepo_GetallHashTagDto_ThrowsException()
+        {
+            var mock = new Mock<IHashTagRepository>();
+
+            mock.Setup(x => x.GetAllHashtagsDto())
                     .Throws(new Exception());
 
             return mock;

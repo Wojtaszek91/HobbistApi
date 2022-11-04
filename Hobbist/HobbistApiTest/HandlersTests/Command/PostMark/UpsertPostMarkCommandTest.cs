@@ -5,20 +5,18 @@ using Microsoft.Extensions.Logging;
 using Models.Models;
 using Moq;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace HobbistApiTest
+namespace HobbistApiTest.HandlersTests.Commands.PostMark
 {
     public class UpsertPostMarkCommandTest
     {
         private readonly Mock<ILogger<UpserPostMarkCommandHandler>> _loggerMock;
         private readonly CancellationToken _cancellationToken;
         private readonly Guid _postId;
-        private readonly Post _dummyPost;
+        private readonly Models.Models.Post _dummyPost;
         private readonly Guid _userProfileId;
         private readonly UserProfile _dummyUserProfile;
 
@@ -27,7 +25,7 @@ namespace HobbistApiTest
             _loggerMock = new Mock<ILogger<UpserPostMarkCommandHandler>>();
             _cancellationToken = new CancellationToken();
             _postId = Guid.NewGuid();
-            _dummyPost = new Post()
+            _dummyPost = new Models.Models.Post()
             {
                 Id = _postId
             };

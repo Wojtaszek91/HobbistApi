@@ -1,12 +1,8 @@
 ﻿using MediatR;
-using Models.Models.DTOs.Profile;
-using Models.Models.EntityFrameworkJoinEntities.DTOs;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace HobbistApi.CQRS.Commands.UpdateProfileCommand.cs
+namespace HobbistApi.CQRS.Commands.UpdateProfileCommand
 {
     public class UpdateProfileHashtagsCommandRequest : IRequest<int>
     {

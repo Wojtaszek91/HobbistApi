@@ -1,17 +1,16 @@
 ﻿using FluentAssertions;
+using HobbistApi.CQRS.Commands.UpdateProfileCommand;
 using HobbistApi.CQRS.Commands.UpdateProfileCommand.cs;
 using HobbistApiTest.MockBuilders;
 using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace HobbistApiTest.HandlersTests.ProfileCommands
+namespace HobbistApiTest.HandlersTests.Profile
 {
     public class UpdateProfileHashtagsCommandTest
     {
