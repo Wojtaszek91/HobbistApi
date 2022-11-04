@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using Models.Models.EntityFrameworkJoinEntities.DTOs;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -17,8 +16,8 @@ namespace HobbistApi.CQRS.Queries.HashTag.GetAllHashTagDtoQuery
 
         public GetAllHashTagDtoQueryHandler(IHashTagRepository hashTagRepository, ILogger<GetAllHashTagDtoQueryHandler> logger)
         {
-            this._hashTagRepository = hashTagRepository;
-            this._logger = logger;
+            _hashTagRepository = hashTagRepository;
+            _logger = logger;
         }
 
         public Task<List<HashTagDto>> Handle(GetAllHashTagDtoQueryRequest request, CancellationToken cancellationToken)

@@ -1,4 +1,5 @@
 ﻿using HobbistApi.CQRS.Commands.DeleteProfileCommand;
+using HobbistApi.CQRS.Commands.UpdateProfileCommand;
 using HobbistApi.CQRS.Commands.UpdateProfileCommand.cs;
 using HobbistApi.CQRS.Commands.UpdateProfilePhotoCommand;
 using HobbistApi.CQRS.Commands.UserProfile.AddHashtagCommand;

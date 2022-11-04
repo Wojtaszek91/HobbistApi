@@ -1,14 +1,7 @@
 ﻿using DAL.Repositories.IRepositories;
-using HobbistApi.CQRS.Commands.AddPostMark;
-using Microsoft.Extensions.Logging;
 using Models.Models;
-using Models.Models.EntityFrameworkJoinEntities.DTOs;
 using Moq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HobbistApiTest.MockBuilders
 {

@@ -5,14 +5,11 @@ using Microsoft.Extensions.Logging;
 using Models.Models.DTOs;
 using Moq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace HobbistApiTest.HandlersTests.ProfileCommands
+namespace HobbistApiTest.HandlersTests.Profile
 {
     public class UpdateProfilePhotoCommandTest
     {
